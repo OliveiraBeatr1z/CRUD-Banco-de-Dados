@@ -21,8 +21,8 @@ CREATE TABLE Turma(
   codTurma int auto-increment primary key,
   duracaoAula time,
   dtInicio date,
-  dtFim,
-  tipoAtividade,
+  dtFim date,
+  tipoAtividade varchar(100),
   FOREIGN KEY (codProfessor) REFERENCES Professor(codProfessor)
 );
 
